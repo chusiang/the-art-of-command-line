@@ -64,7 +64,7 @@
 
 - 熟悉正則表示式，以及 `grep`／`egrep` 裡不同參數的作用，例如 `-i`，`-o`，`-v`，`-A`，`-B` 和 `-C`，這些參數是值得學習並掌握的。
 
-- 學會使用 `apt-get`，`yum`，`dnf` 或 `pacman` (取決於你使用的 Linux 發行版) 來查詢或安裝軟體包。並確保你的環境中有 `pip` 來安裝基於 Python 的命令列工具 (接下來提到的部分程式使用 `pip` 來安裝會很方便)。
+- 學會使用 `apt-get`，`yum`，`dnf` 或 `pacman` (取決於你使用的 Linux 發行版) 來查詢或安裝軟體套件。並確保你的環境中有 `pip` 來安裝基於 Python 的命令列工具 (接下來提到的部分程式使用 `pip` 來安裝會很方便)。
 
 
 ## 日常使用
@@ -442,7 +442,7 @@ mkdir empty && rsync -r --delete empty/ some-dir && rmdir some-dir
 
 - `rsync`：通過 ssh 或本地檔案系統同步檔案和資料夾
 
-- `wireshark` 和 `tshark`：抓包和網路偵錯工具
+- `wireshark` 和 `tshark`：抓封包和網路偵錯工具
 
 - `ngrep`：網路層的 grep
 
@@ -494,7 +494,7 @@ mkdir empty && rsync -r --delete empty/ some-dir && rmdir some-dir
 
 以下是*僅限於* MacOS 系統的技巧
 
-- 用 `brew` (Homebrew) 或者 `port` (MacPorts) 進行包管理。這些可以用來在 Mac 系統上安裝以上的大多數命令。
+- 用 `brew` (Homebrew) 或者 `port` (MacPorts) 進行套件管理。這些可以用來在 Mac 系統上安裝以上的大多數命令。
 
 - 用 `pbcopy` 複製任何命令的輸出到桌面應用，用 `pbpaste` 貼上輸入。
 
