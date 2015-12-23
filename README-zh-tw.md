@@ -24,24 +24,21 @@
 
 熟練使用命令列是一種常常被忽視，或被認為難以掌握的技能，但實際上，它會提高你作為工程師的靈活性以及生產力。本文是一份我在 Linux 上工作時，發現的一些命令列使用技巧的摘要。有些技巧非常基礎，而另一些則相當複雜，甚至晦澀難懂。這篇文章並不長，但當你能夠熟練掌握這裡列出的所有技巧時，你就學會了很多關於命令列的東西了。
 
-這篇文章是[許多作者和譯者](AUTHORS.md)共同的成果。這裡的大部分內容
-[首次](http://www.quora.com/What-are-some-lesser-known-but-useful-Unix-commands)
-[出現](http://www.quora.com/What-are-the-most-useful-Swiss-army-knife-one-liners-on-Unix)
-於 [Quora](http://www.quora.com/What-are-some-time-saving-tips-that-every-Linux-user-should-know)，但考慮到這裡的人們都具有學習的天賦且樂於接受別人的建議，使用 Github 來做這件事是更佳的選擇。如果你在本文中發現了錯誤或者存在可以改善的地方，請果斷提交 Issue 或 Pull Request！(當然在提交前請看一下必讀節和已有的 PR/issue）。
+這篇文章是[許多作者和譯者](AUTHORS.md)共同的成果。這裡的大部分內容[首次](http://www.quora.com/What-are-some-lesser-known-but-useful-Unix-commands)[出現](http://www.quora.com/What-are-the-most-useful-Swiss-army-knife-one-liners-on-Unix)於 [Quora](http://www.quora.com/What-are-some-time-saving-tips-that-every-Linux-user-should-know)，但考慮到這裡的人們都具有學習的天賦且樂於接受別人的建議，使用 Github 來做這件事是更佳的選擇。如果你在本文中發現了錯誤或者存在可以改善的地方，請果斷提交 Issue 或 Pull Request！(當然在提交前請看一下必讀節和已有的 PR/issue）。
 
 
 ## 必讀
 
 涵蓋範圍：
 
-- 這篇文章對剛接觸命令列的新手以及具有命令列使用經驗的人都有用處。本文致力於做到*覆蓋面廣*（儘量包括一切重要的內容），*具體*（給出最常見的具體的例子）以及*簡潔*（避免不必要的，或是可以在其他地方輕鬆查到的細枝末節）。每個技巧在特定情境下或是基本的，或是能顯著節約時間。
+- 這篇文章對剛接觸命令列的新手以及具有命令列使用經驗的人都有用處。本文致力於做到*覆蓋面廣* (儘量包括一切重要的內容)，*具體* (給出最常見的具體的例子) 以及*簡潔* (避免不必要的，或是可以在其他地方輕鬆查到的細枝末節)。每個技巧在特定情境下或是基本的，或是能顯著節約時間。
 - 本文為 Linux 所寫，除了[僅限 MacOS X 系統](#僅限-macos-x-系統)節。其它節中的大部分內容都適用於其它 Unix 系統或 MacOS 系統，甚至 Cygwin。
 - 本文關注於互動式 Bash，儘管很多技巧也適用於其他 shell 或 Bash 指令碼。
 - 本文包括了“標準的”Unix 命令和需要安裝特定包的命令，只要它們足夠重要。
 
 注意事項：
 
-- 為了能在一頁內展示儘量多的東西，一些具體的資訊會被間接的包含在引用頁裡。聰明機智的你如果掌握了使用 Google 搜尋引擎的基本思路與命令，那麼你將可以查閱到更多的詳細資訊。使用 `apt-get`／`yum`／`dnf`／`pacman`／`pip`／`brew`（以及其它合適的包管理器）來安裝新程式。
+- 為了能在一頁內展示儘量多的東西，一些具體的資訊會被間接的包含在引用頁裡。聰明機智的你如果掌握了使用 Google 搜尋引擎的基本思路與命令，那麼你將可以查閱到更多的詳細資訊。使用 `apt-get`／`yum`／`dnf`／`pacman`／`pip`／`brew`（以及其它合適的套件管理員）來安裝新程式。
 - 使用 [Explainshell](http://explainshell.com/) 去獲取相關命令、參數、管道等內容的解釋。
 
 
